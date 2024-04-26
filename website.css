@@ -115,10 +115,16 @@ section .cards h3 {
 
 
 
+
+
 /* CURRENT PROJECT*/
 
 
 
+
+#feature {
+    margin-top: 100px;
+}
 .breaker{
     background-color: black;
     height: 80%;
@@ -171,6 +177,7 @@ section .cards h3 {
 
 #proj-intro {
     margin: 0;
+    padding-top: 50px;
     font-family: monospace;
     height: 700px;
 }
@@ -298,73 +305,76 @@ section .cards h3 {
 /* OTHER PROJECTS */
 
 
-#projs {
-    justify-content: center;
-    height: 130vh;
-}
 
-.container-proj  {
-    display: flex;  
-    justify-content: space-between;
-    width: 100%;
+.proj-head{
     text-align: center;
+    font-size: 30px;
+}
+.proj-container{
+    display: flex;
+    justify-content: center;
 }
 
-.proj-img {
-    width: 400px;
-    height: 150px;
-    z-index: 1;
-}
-
-.container-proj img{
+.other-proj{
     width: 100%;
-    height: auto;
+    overflow: auto;
+    height: inherit;
+    transition: scroll-top 1s ease;
+    border-radius: 20px;
 }
 
-.proj{
-    position: relative;
-    margin: 10px auto;
+.proj-content{
+    padding: 30px;
+    
+}
+
+.header-photo{
+    margin: 0;
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.card1{
+    background-image: url("feat-header1.jpg");
+}
+
+.card2{
+    background-image: url("feat-header2.jpg");
+}
+
+.card3{
+    background-image: url("feat-header3.jpg");
+}
+
+.proj-link{
+    width: 25%;
+    box-shadow: 2px 2px 5px  grey;
     margin: 30px;
-}
-
-.container-proj h3 {
+    height: 80vh;
+    text-decoration: none;
     color: black;
 }
 
 
-.pop-desc {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: inherit;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    transition: 0.5s;
-    opacity: 0;
+.proj-link:hover .header-photo{
+    height: 20vh;
 }
 
-
-.proj-img:hover .pop-desc{
-    opacity: 1;
+.other-proj::-webkit-scrollbar{
+    display: none;
 }
 
-.proj-img:hover img{
-    filter: blur(10px);
+.more{
+    color: gray;
 }
 
-.inactive {
-    display: static;     
-    z-index: 1;
-    transform: translateY(-50px);
-    transition: 1s;
-    opacity:0;
+.more:hover{
+    color: black;
 }
 
-.proj-img:hover + .inactive{
-    transform: translateY(0px);
-    opacity: 1;
-}
 
 
 
@@ -383,11 +393,15 @@ header {
     display: flex;
     justify-content: space-between;
     transition: .5s;
-    padding: 40px 100px;
+    height: 80px;
     z-index: 1;
+    font-family: Cocogoose;
+    
 }
 
 header .logo {
+    margin-left: 50px;
+    margin-top: 10px;
     position: relative;
     transition: .5s;
     opacity: 0;
@@ -395,91 +409,134 @@ header .logo {
 
 
 header .logo img {
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
 }
 
 .NavList {
-    margin-right: 100px;
+    top: 0;
+    margin-right: 50px;
+    height: inherit;
+
 }
 
 header ul {
-    position: relative;
+    margin-top: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    height: inherit;
 }
 
 header ul li {
-    position: relative;
     list-style-type: none;
-    margin: 20px;
+    height: inherit; 
 }
 
-header ul li a {
-    position: relative;
-    margin: 15px 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    transition: .5s;
-    width: 30px;
+
+.links {
+    height: inherit;
+    padding-top: 29px;
 }
 
 header.sticky {
-    padding: 5px 100px;
     background: #f9f9f9;
-    box-shadow: 2px 2px 3px grey;
 }
 
-header.sticky .logo, header.sticky ul li a {
+
+
+.dropdown {
+    float: right;
+    height: inherit;
+    position: relative;
+    overflow: visible;
+}
+
+.dropdown .dropdown-btn{
+    height: inherit;
+    width: inherit;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    margin: 0;
+    color: white;
+    transition: .5s;
+    padding: 20px;
+    font-size: 19px;
+}
+
+
+.dropdown .dropdown-btn img{
+    filter: invert(100%);
+    width: 15px;
+    height: auto;
+    margin-top: 5px;
+}
+
+header.sticky .dropdown .dropdown-btn img {
+    filter: none;
+    transition: .5s;
+}
+
+
+
+
+.dropdown:hover  .dropdown-btn{
+    color: white;
+    background-color: black;
+}
+
+
+.dropdown-content {
+    background-color: #ccc;
+    display: none;
+    position: absolute;  
+    z-index: 1;
+    text-align: left;
+    width: 140%;
+    right: 0;
+    top: 100;
+    pointer-events: auto;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+header.sticky .dropdown:hover .dropdown-btn{
+    color: white;
+    background-color: black;
+}
+
+header.sticky .dropdown:hover img{
+    filter: invert(100%);
+    transform: rotate(180deg);
+    transition: 0.75s;
+}
+
+header .dropdown:hover img{
+    filter: invert(100%);
+    transform: rotate(180deg);
+    transition: 0.75s;
+}
+
+header.sticky .logo, header.sticky ul li a, header.sticky .dropdown .dropdown-btn{
     color: #000;
     opacity: 1;
 }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 19px;
-    border: none;
-    outline: none;
-    color: gray;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-}
-
-nav ul li a:hover, .dropdown:hover .dropbtn {
-    color: white;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
+/* Links inside the dropdown */
 .dropdown-content a {
-    margin-bottom: 0px;
-    height: 40px;
     color: black;
-    padding: 10px;
+    padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: center;
+    font-size: 10px;
 }
 
-.dropdown-content a:hover {
-    background-color: gray;
-}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+
