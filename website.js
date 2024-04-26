@@ -43,6 +43,16 @@ function reveal() {
     }
 }
 
+
+
+let myDiv = document.querySelectorAll('.other-proj');
+
+myDiv.forEach(myDiv => {
+  myDiv.addEventListener('mouseleave', () => {
+    myDiv.scrollTo({ top: 0, behavior: 'smooth' }); /* Scroll back to the top when unhovering */
+  });
+});
+
 let list = document.querySelector('.sliders .list');
 let items = document.querySelectorAll('.sliders .list .slide');
 let dots = document.querySelectorAll('.sliders .dots li');
@@ -89,3 +99,4 @@ dots.forEach((li, key) => {
         reloadSlider();
     })
 })
+
