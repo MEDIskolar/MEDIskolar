@@ -5,25 +5,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="website.css">
         <title>MEDiskolar</title>
+        <script src="https://kit.fontawesome.com/f2bbd89069.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <a href="#" class="logo"><img src='Logo.png'></a>
+            <a href="#" class="logo"><img src='Logo.png'> </a>
             <ul class="NavList">
-                <li><a href="#AboutUs"> About Us </a></li>
                 <li>
                     <div class="dropdown">
-                        <button class="dropbtn"> Projects </button>
+                        <button class="dropdown-btn">About Us   <img src="arrow.png"></img></button>
                         <div class="dropdown-content">
-                            <a href="medi.com" class="hover1">Test 1</a>
-                            <a href="medi.com" class="hover2">Test 2</a>
-                            <a href="placeholder" class="hover3">Test 3</a>
+                            <a href="medi.com" class="hover1">
+                                <h3>Social Media</h3>
+                            </a>
+                            <a href="medi.com" class="hover1">
+                                <h3>Outreach Programs</h3>
+                            </a>
+                            <a href="medi.com" class="hover1">
+                                <h3>Outreach Programs</h3>
+                            </a>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="dropdown">
-                        <button class="dropbtn"> Who Are We? </button>
+                        <button class="dropdown-btn">Projects   <img src="arrow.png"></button>
+                        <div class="dropdown-content">
+                            <a href="medi.com" class="hover1">
+                                <h3>WeeklyDose</h3>
+                            </a>
+                            <a href="medi.com" class="hover1">
+                                <h3>WeeklyDose</h3>
+                            </a>
+                            <a href="medi.com" class="hover1">
+                                <h3>WeeklyDose</h3>
+                            </a>
+                            <a href="medi.com" class="hover1">
+                                <h3>WeeklyDose</h3>
+                            </a>
+                            <a href="medi.com" class="hover1">
+                                <h3>WeeklyDose</h3>
+                            </a>
+                            <a href="medi.com" class="hover1">
+                                <h3>WeeklyDose</h3>
+                            </a>
+                            <a href="medi.com" class="hover1">
+                                <h3>WeeklyDose</h3>
+                            </a>
+                        </div>
+                            <!--
+                            <div class="row">
+                                <h3>Projects</h3>
+                                
+                                <div class="column">
+                                  <a href="#">Weekly Dose</a>
+                                  <a href="#">MEDi-sease</a>
+                                  <a href="#">MEDi-News</a>
+                                </div>
+                                <div class="column">
+                                  <a href="#">MEDi-Thinks Who?</a>
+                                  <a href="#">Quick A&P</a>
+                                  <a href="#">Go Fund MEd</a>
+                                </div>
+                                <div class="column">
+                                  <a href="#">Road To Med</a>
+                                  <a href="#">MEDequiped</a>    
+                                </div>
+                            </div>
+                            -->
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Members   <img src="arrow.png"></i></button>
                         <div class="dropdown-content">
                             <a href="placeholder" class="hover4">Directorial Board</a>
                             <a href="placeholder" class="hover5">Committees</a>
@@ -31,43 +85,45 @@
                         </div>
                     </div>
                 </li>
-                <li><a href=#sourcesReferences> Sources and Refernces</a></li>
             </ul>
+            
+
         </header>
         <section id="home" class="hp">
             <div class="background">
                 <div class="homeLogo">
-                    <img src="MEDiLogo.png" alt="Medisokal Logo">
+                    <img src="MEDiLogo.png" alt="Mediskolar Logo">
                     <h1>Pioneering Literacy and Service in Healthcare</h1>
                 </div>
             </div>
         </section>
 
-        <section id="MNV" class="reveal">
-            <h2>About Us</h2>
-            <div class="cards"> 
+        <section id="MNV">
+            <div class="card-container reveal">
+                <h2>About Us</h2>
+                <div class="cards"> 
 
-                <div class="MV">
-                    <h3>Mission</h3>
-                    <p>
-                        The mission of this organization is to promote health literacy and service in the community and guide, 
-                        engage, and develop the youth’s inclination to pursue medicine through accessible and comprehensive health 
-                        educational and service campaigns aimed toward the masses. 
-                    </p>
+                    <div class="MV">
+                        <h3>Mission</h3>
+                        <p>
+                            The mission of this organization is to promote health literacy and service in the community and guide, 
+                            engage, and develop the youth’s inclination to pursue medicine through accessible and comprehensive health 
+                            educational and service campaigns aimed toward the masses. 
+                        </p>
+                <!--Probably add an image here, need ko lang ung image-->
+                    </div>
+
+                    <div class="MV">
+                        <p>
+                            The vision of this organization is an informed and well-served community equipped with health literacy and services, 
+                            and consisting of young health advocates eager to serve the masses through their present and future activities. 
+                        </p>
+                        <h3>Vision</h3>
+                    </div>
+                    
+                </div>
             <!--Probably add an image here, need ko lang ung image-->
-                </div>
-
-                <div class="MV">
-                    <p>
-                        The vision of this organization is an informed and well-served community equipped with health literacy and services, 
-                        and consisting of young health advocates eager to serve the masses through their present and future activities. 
-                    </p>
-                    <h3>Vision</h3>
-                </div>
-                
             </div>
-            <!--Probably add an image here, need ko lang ung image-->
-
         </section>
         <section id="feature" class="feat">
             <div class="contain-feat">
@@ -78,7 +134,7 @@
                     <h3>Weekly Dose #3</h3>
                     <h1>The Benefits of Hugs</h1>
                     <p>
-                            Hugs are often seen as a mere expression of affection, but research reveals a surprising number of health benefits involving hugs. 
+                        Hugs are often seen as a mere expression of affection, but research reveals a surprising number of health benefits involving hugs. 
                         Beyond fuzzy feelings, hugging can positively impact your physical and mental well-being. Here is a short list of its remarkable effects.
                     </p>
                 </div>
@@ -99,22 +155,22 @@
                         <img src="proj1.jpg" alt="Project 1">
                     </div>
                     <div class="slide">
-                        <img src="proj2.jpg" alt="Project 1">
+                        <img src="proj2.jpg" alt="Project 2">
                     </div>
                     <div class="slide">
-                        <img src="proj3.jpg" alt="Project 1">
+                        <img src="proj3.jpg" alt="Project 3">
                     </div>
                     <div class="slide">
-                        <img src="proj4.jpg" alt="Project 1">
+                        <img src="proj4.jpg" alt="Project 4">
                     </div>
                     <div class="slide">
-                        <img src="proj5.jpg" alt="Project 1">
+                        <img src="proj5.jpg" alt="Project 5">
                     </div>
                     <div class="slide">
-                        <img src="proj6.jpg" alt="Project 1">
+                        <img src="proj6.jpg" alt="Project 6">
                     </div>
                     <div class="slide">
-                        <img src="proj7.jpg" alt="Project 1">
+                        <img src="proj7.jpg" alt="Project 7">
                     </div>
                 </div>
     
@@ -139,105 +195,68 @@
             </div>    
         </section>
         <section id="projs">
-            <!--In the future, will be replaced by credibility ng org, different page na dapat ang projects-->
-            <div class="container-proj">
-                <div class="projects1">
-                    <div class="proj">
-                        <div class="proj-img">
-                            <img src="proj1.jpg">
-                            <div class="pop-desc">
-                                <p>description</p>
-                            </div>
+            <div class="proj-head"><h1>Recent News</h1></div>
+            <div class="proj-container">
+                <a href="test" class="proj-link">
+                    <div class="other-proj">
+                        <div class="header-photo card1"></div>
+                        <div class="proj-content">
+                            <h3>MEDi-sease #1</h3>
+                            <h1>Lung Cancer: It's Time to Take Care of Our Lungs!</h1>
+                            <p>
+                                The lungs account for a significant portion of our respiratory system—a complex network of organs 
+                                and tissues that allows us to breathe. Having unhealthy lungs would hinder our ability to maintain 
+                                life and participate in various activities. Thus, preventive measures and early detection are essential for 
+                                tending to our lung health, ultimately, maintaining an overall healthy well-being. 
+                            </p>
+                            <p class="more">read more</p>
                         </div>
                     </div>
-                    <div class="proj">
-                        <div class="proj-img">
-                            <img src="proj2.jpg">
-                            <div class="pop-desc">
-                                <p>description</p>
-                            </div>
+                </a>
+                <a href="test" class="proj-link">
+                    <div class="other-proj">
+                        <div class="header-photo card2"></div>
+                        <div class="proj-content">
+                            <h3>Weekly Dose #5</h3>
+                            <h1>Heart's Month!</h1>
+                            <p>
+                                As February paints the town red with love, let's not forget to cherish the most important heart of all – our own! 💌
+                                In honor of the 𝙋𝙝𝙞𝙡𝙞𝙥𝙥𝙞𝙣𝙚 𝙃𝙚𝙖𝙧𝙩 𝙈𝙤𝙣𝙩𝙝, legislated under Proclamation No. 1096, let's pledge to prioritize our heart health 
+                                and spread awareness about cardiovascular wellness. 💖
+
+                                As Valentine’s Day draws near, don't hesitate to tune into the rhythm of your own heartbeat! 
+                                Each heart dances to its own tune, making it crucial to pay attention to any signs of illness.
+                                So here are some ways to care for your heart, like how you would for that special someone: 😉❤️‍
+                            </p>
+                            <p class="more">read more</p>
                         </div>
                     </div>
-                    
-                    <div class="proj">
-                        <div class="proj-img">
-                            <img src="proj3.jpg">
-                            <div class="pop-desc">
-                                <p>description</p>
-                            </div>
-                        </div>
-                        <div class="inactive">
-                            <p>coming soon!</p>
-                        </div>
-                    </div>
-                    <div class="proj">
-                        <div class="proj-img">
-                            <img src="proj4.jpg">
-                            <div class="pop-desc">
-                                <p>description</p>
-                            </div>
-                        </div>
-                        <div class="inactive">
-                            <p>coming soon!</p>
+                </a>
+                <a href="test" class="proj-link">
+                    <div class="other-proj">
+                        <div class="header-photo card3"></div>
+                        <div class="proj-content">
+                            <h3>MEDiNews #1</h3>
+                            <h1>Breaking Medical Barriers: Filipino Researchers Use 3D Printing and AI for Bone Tissue Repair</h1>
+                            <p>
+                                As the world advances into the future, technology provides us with inventions that drastically improve our lives each day. 
+                                From the emergence of the Internet to the advancement of artificial intelligence (AI), global progress is giving society a glimpse 
+                                into what can become a whimsical, sci-fi future. Even in the medical field, the future of such technology has been discussed and debated extensively 
+                                over the past years. While it is unlikely that these technological advancements will replace medical professionals at present, their potential has 
+                                caught the eye of many, and this futuristic technology may very well be the key to a new era of revolutionary medicine. 
+                            </p>
+                            <p class="more">read more</p>
                         </div>
                     </div>
-                </div>
-                <div class="projects2">
-                    
-                    <div class="proj">
-                        <div class="proj-img">
-                            <img src="proj5.jpg">
-                            <div class="pop-desc">
-                                <p>description</p>
-                            </div>
-                        </div>
-                        <div class="inactive">
-                            <p>coming soon!</p>
-                        </div>
-                    </div>
-                    
-                    <div class="proj">
-                        <div class="proj-img">
-                            <img src="proj6.jpg">
-                            <div class="pop-desc">
-                                <p>description</p>
-                            </div>
-                        </div>
-                        <div class="inactive">
-                            <p>coming soon!</p>
-                        </div>
-                    </div>
-                    <div class="proj">
-                        <div class="proj-img">
-                            <img src="proj7.jpg">
-                            <div class="pop-desc">
-                                <p>description</p>
-                            </div>
-                        </div>
-                        <div class="inactive">
-                            <p>coming soon!</p>
-                        </div>
-                    </div>
-                    <div class="proj">
-                        <div class="proj-img">
-                            <img src="proj8.jpg">
-                            <div class="pop-desc">
-                                <p>description</p>
-                            </div>
-                        </div>
-                        <div class="inactive">
-                            <p>coming soon!</p>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
         </section>
-        <section id="progress">
-            Recent Accomplishments
+        <section id="references">
+            <div>
+                
+            </div>
         </section>
-        <section id="footer">
-            <h1>references</h1>
-        </section>
+
     </body>
     <script src="website.js"></script>
 </html>
