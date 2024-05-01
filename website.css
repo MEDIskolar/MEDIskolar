@@ -321,11 +321,12 @@ section .cards h3 {
     height: inherit;
     transition: scroll-top 1s ease;
     border-radius: 20px;
+    border-radius: 20px;
 }
 
 .proj-content{
     padding: 30px;
-    
+    border-radius: 20px;
 }
 
 .header-photo{
@@ -356,6 +357,7 @@ section .cards h3 {
     height: 80vh;
     text-decoration: none;
     color: black;
+    border-radius: 20px;
 }
 
 
@@ -537,6 +539,9 @@ header.sticky .logo, header.sticky ul li a, header.sticky .dropdown .dropdown-bt
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
+.dropdown-content a:hover {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-decoration-thickness: 1.2px;
+}
 
